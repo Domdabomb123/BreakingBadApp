@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="dominicschumerth.c.breakingbadapp.ui.main.MainFragment"
+        android:label="Breaking Bad App"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_main_to_detail"
+            app:destination="@id/detailFragment">
+            <argument
+                android:name="character"
+                app:argType="dominicschumerth.c.breakingbadapp.model.Character" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="dominicschumerth.c.breakingbadapp.ui.detail.DetailFragment"
+        android:label="Detail"
+        tools:layout="@layout/detail_fragment" >
+        <argument
+            android:name="character"
+            app:argType="dominicschumerth.c.breakingbadapp.model.Character"/>
+    </fragment>
+</navigation>

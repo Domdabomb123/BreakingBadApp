@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BreakingBadApp</string>
+    <string name="name">Name:</string>
+    <string name="occupations">Occupations:</string>
+    <string name="status">Status:</string>
+    <string name="nickname">Nickname:</string>
+    <string name="seasons">Seasons:</string>
+</resources>
